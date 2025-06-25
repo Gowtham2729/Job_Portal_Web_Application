@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>All Applications</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th><th>Email</th><th>Phone</th><th>Job</th><th>Resume</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for application in applications %}
+        <tr>
+            <td>{{ application.name }}</td>
+            <td>{{ application.email }}</td>
+            <td>{{ application.phone }}</td>
+            <td>{{ application.job_title }}</td>
+            <td>
+                <!--a href="{{ url_for('static', filename='resumes/' ~ application.resume) }}" target="_blank">View</a--> |
+                <a href="{{ url_for('static', filename='resumes/' ~ application.resume) }}" download>Download</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

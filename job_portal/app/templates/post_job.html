@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2>Post a Job</h2>
+  <form method="POST">
+    {{ form.hidden_tag() }}
+    <div>{{ form.title.label }} {{ form.title(size=40) }}</div>
+    <div>{{ form.description.label }} {{ form.description(size=40) }}</div>
+    <div>{{ form.salary.label }} {{ form.salary(size=40) }}</div>
+    <div>{{ form.location.label }} {{ form.location(size=40) }}</div>
+    <div>{{ form.company.label }} {{ form.company(size=40) }}</div>
+    <div>{{ form.submit(class="btn btn-success") }}</div>
+  </form>
+{% endblock %}
+{% block scripts %}
+  <script>
+    // You can add any JavaScript here if needed
+  </script>
+{% endblock %}
+{% block styles %}
+  <style>
+    /* Add any custom styles here */
+    form div {
+      margin-bottom: 10px;
+    }
+  </style>
+{% endblock %}

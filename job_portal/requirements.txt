@@ -1,0 +1,16 @@
+Flask
+Flask-WTF
+Flask-Login
+Flask-SQLAlchemy
+Werkzeug
+email-validator
+Flask-Migrate
+requests
+OpenAI
+OS
+Flask
+UserMixin
+app # Flask-Admin
+Flask-Admin
+Flask-Mail
+

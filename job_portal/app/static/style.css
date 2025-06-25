@@ -1,0 +1,116 @@
+:root {
+    --bg-color: #f4f6f9;
+    --text-color: #333;
+    --card-bg: #ffffff;
+    --navbar-bg: #2c3e50;
+    --navbar-text: #ecf0f1;
+    --primary-color: #3498db;
+    --primary-hover: #2980b9;
+}
+
+body.dark-mode {
+    --bg-color: #1e1e2f;
+    --text-color: #f5f5f5;
+    --card-bg: #2a2a40;
+    --navbar-bg: #111;
+    --navbar-text: #f5f5f5;
+    --primary-color: #8e44ad;
+    --primary-hover: #732d91;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.navbar {
+    background-color: var(--navbar-bg);
+    color: var(--navbar-text);
+}
+
+.navbar a {
+    color: var(--navbar-text);
+}
+
+.btn {
+    background-color: var(--primary-color);
+}
+
+.btn:hover {
+    background-color: var(--primary-hover);
+}
+
+.card {
+    background-color: var(--card-bg);
+    color: var(--text-color); /* <-- this is key */
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+.card h3 {
+    color: var(--text-color);
+}
+
+.theme-toggle {
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: var(--navbar-text);
+    font-size: 1.2rem;
+}
+.theme-toggle:hover {
+    color: var(--primary-color);
+}   
+.card:hover {
+    background-color: var(--primary-hover);
+}
+
+.remote-job-card {
+    background-color: var(--card-bg); /* ✅ GOOD */
+    color: var(--text-color);         /* ✅ GOOD */
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+.remote-job-card:hover {
+    background-color: var(--primary-hover);
+    color: var(--navbar-text); /* Change text color on hover */
+}
+.remote-job-card h3 {
+    color: var(--text-color);
+}
+.remote-job-card p {
+    color: var(--text-color);
+}
+.remote-job-card a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.remote-job-card a:hover {
+    color: var(--primary-hover);
+}
+.remote-job-card .btn {
+    background-color: var(--primary-color);
+    color: var(--navbar-text);
+}
+
+.remotive-section {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.job-item {
+    background-color: transparent; /* Prevent white background on li */
+    color: var(--text-color);
+    border: none;
+    border-bottom: 1px solid rgba(200, 200, 200, 0.2);
+}
+.job-item:hover {
+    background-color: var(--primary-hover);
+    color: var(--navbar-text);
+}
